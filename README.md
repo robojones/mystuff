@@ -36,10 +36,10 @@ const mystuff = require('mystuff');
 const g = mystuff.global;
 
 // set something
-g('value1', 'stuff');
-g('value2', 'things');
+g.set('value1', 'stuff');
+g.set('value2', 'things');
 
 // get something
-console.log( g('value1'), '&', g('value2') );
+console.log( g.get('value1'), '&', g.get('value2') );
 //=> 'stuff & things'
 ```

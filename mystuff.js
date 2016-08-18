@@ -28,12 +28,15 @@ function mystuff(stuffname) {
 }
 
 // global storage:
-mystuff.global = glob;
+mystuff.global = {
+    set: set,
+    get: get
+};
 
-function glob(id, value) {
-    if(value) {
-        myThings[id] = value;
-    } else {
-        return myThings[id];
-    }
+function set(id, value) {
+    myThings[id] = value;
+}
+
+function get(id) {
+    return myThings[id];
 }
