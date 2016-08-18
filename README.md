@@ -32,11 +32,13 @@ You can use the `mystuff.global()` method for getting and setting global variabl
 
 ```
 const mystuff = require('mystuff');
+const g = mystuff.global;
 
 // set something
-mystuff.global('name', 'Hans Huhn');
+g('value1', 'stuff');
+g('value2', 'things');
 
 // get something
-console.log( mystuff.global('name') );
-//=> 'Hans Huhn'
+console.log( g('value1'), '&', g('value2') );
+//=> 'stuff & things'
 ```

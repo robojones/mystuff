@@ -7,7 +7,7 @@ const myThings = {};
 
 if(!fs.existsSync(base)) {
     console.log('You have no own stuff!');
-    console.log('Copy your own modules to', base);
+    console.log(`Copy your own modules to "$(base)"`);
     fs.mkdirSync(base);
 }
 
