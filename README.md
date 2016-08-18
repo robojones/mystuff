@@ -2,8 +2,9 @@
 `mystuff` makes it easier to organize your local modules.
 ## Installation
 `npm install mystuff`
+
 When you require `mystuff` for the first time it creates a folder named `own_modules` in your users home directory.
-In this folder you can place your own modules.
+In this folder you can store your own modules.
 ## Own Modules
 You can create your modules in two ways: as a single JavaScript file or as a directory.
 ### File
