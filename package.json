@@ -1,0 +1,30 @@
+{
+  "name": "mystuff",
+  "version": "1.0.0",
+  "description": "require local modules",
+  "main": "mystuff.js",
+  "scripts": {
+    "test": "echo \"no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robojones/mystuff.git"
+  },
+  "keywords": [
+    "require",
+    "local",
+    "module",
+    "modules",
+    "better"
+  ],
+  "author": "robojones",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/robojones/mystuff/issues"
+  },
+  "homepage": "https://github.com/robojones/mystuff#readme",
+  "engines" : {
+  	"node" : ">=6.3.1"
+  },
+  "tonicExample": "const mystuff = require('mystuff');"
+}
