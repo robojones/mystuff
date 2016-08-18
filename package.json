@@ -1,6 +1,6 @@
 {
   "name": "mystuff",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "easier local require and global storage",
   "main": "mystuff.js",
   "scripts": {
