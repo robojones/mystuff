@@ -1,7 +1,7 @@
 {
   "name": "mystuff",
   "version": "1.0.0",
-  "description": "require local modules",
+  "description": "easier local require & global storage",
   "main": "mystuff.js",
   "scripts": {
     "test": "echo \"no test specified\" && exit 0"
