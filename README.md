@@ -17,7 +17,7 @@ var example = mystuff('example');
 var example = mystuff('example.js');
 ```
 ### Directory
-1. Create a directory e.g. `anotherExample` to the `own_modules` folder.
+1. Create a directory e.g. `anotherExample` in the `own_modules` folder.
 2. Add a JavaScript file called `anotherExample.js` or `main.js` in the new directory. They are used as entry-point.
 3. Write your code in the JavaScript file and set the `module.exports` property.
 4. Now you can require this module in all of your projects.
