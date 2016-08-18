@@ -1,5 +1,5 @@
-# mystuff - easier local require & global storage
-`mystuff` makes it easier to organize your local modules.
+# mystuff - easier local require and global storage
+This module makes it easier to organize and require your local modules.
 ## Installation
 `npm install mystuff`
 
