@@ -1,5 +1,6 @@
 # mystuff - easier local require and global storage
 This module makes it easier to organize and require your local modules.
+It also gives you the ability to set global variables that you can use in all of your projects.
 ## Installation
 `npm install mystuff`
 
