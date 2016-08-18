@@ -26,7 +26,7 @@ var example = mystuff('example.js');
 const mystuff = require('mystuff');
 const anotherExample = require('anotherExample');
 ```
-__Tip:__ `mystuff` prefferes the `main.js` file as entry-point.
+__Tip:__ The `main.js` file ist the prefered entry-point.
 ## Global Storage
 You can use the `mystuff.global()` method for getting and setting global variables, that are accessable in all files of your node application.
 
