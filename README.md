@@ -25,7 +25,7 @@ var example = mystuff('example.js');
 4. Now you can require this module in all of your projects.
 ```
 const mystuff = require('mystuff');
-const anotherExample = require('anotherExample');
+const anotherExample = mystuff('anotherExample');
 ```
 __Tip:__ The `main.js` file ist the prefered entry-point.
 ## Global Storage
