@@ -1,4 +1,4 @@
-# mystuff - easier local require and global storage
+# mystuff - easier local require
 This module makes it easier to organize and require your local modules.
 It also gives you the ability to set global variables that you can use in all of your projects.
 ## Installation
@@ -28,18 +28,7 @@ const mystuff = require('mystuff');
 const anotherExample = mystuff('anotherExample');
 ```
 __Tip:__ The `main.js` file ist the prefered entry-point.
-## Global Storage
-You can use the `mystuff.global()` method for getting and setting global variables, that are accessable in all files of your node application.
 
-```
-const mystuff = require('mystuff');
-const g = mystuff.global;
-
-// set something
-g.set('value1', 'stuff');
-g.set('value2', 'things');
-
-// get something
-console.log( g.get('value1'), '&', g.get('value2') );
-//=> 'stuff & things'
-```
+### cd(path)
+Change the directory where your `own_modules` folder is located in.
+The change affects the whole node app.

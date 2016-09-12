@@ -2,19 +2,18 @@ const fs = require('fs');
 const vm = require('vm');
 const path = require('path');
 
-const base = path.join(process.env.HOME, 'own_modules');
-const myThings = {};
+var BASE = path.join(process.env.HOME, 'own_modules');
 
-if(!fs.existsSync(base)) {
+if(!fs.existsSync(BASE)) {
     console.log('You have no own stuff!');
-    console.log(`Copy your own modules to "$(base)"`);
-    fs.mkdirSync(base);
+    console.log(`Copy your own modules to "$(BASE)"`);
+    fs.mkdirSync(BASE);
 }
 
 module.exports = mystuff;
 
 function mystuff(stuffname) {
-    var p = path.join(base, stuffname);
+    var p = path.join(BASE, stuffname);
     if(!path.extname(stuffname)) { //not a filename
         if(fs.existsSync(p + '.js')) { //test if file
             p += '.js';
@@ -27,16 +26,9 @@ function mystuff(stuffname) {
     return require(p);
 }
 
-// global storage:
-mystuff.global = {
-    set: set,
-    get: get
-};
+mystuff.cd = cd;
 
-function set(id, value) {
-    myThings[id] = value;
+function cd(p) {
+	BASE = path.join(p, 'own_modules');
 }
 
-function get(id) {
-    return myThings[id];
-}
